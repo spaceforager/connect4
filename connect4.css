@@ -19,12 +19,16 @@
 /* TODO: make pieces red/blue,  depending on player 1/2 piece */
 .piece.player1 {
 	background-color: blue;
-	transition: top 3s ease 0s;
+	transition: all 0.5s ease-out 0s;
+	position: relative;
+	top: -150px;
 }
 
 .piece.player2 {
 	background-color: red;
-	transition: top 3s ease 0s;
+	transition: all 0.5s ease-out 0s;
+	position: relative;
+	top: -150px;
 }
 
 /* column-top is table row of clickable areas for each column */

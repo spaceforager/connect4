@@ -71,9 +71,15 @@ function placeInTable(y, x) {
 	const piece = document.createElement('div');
 	piece.classList.add('piece');
 	piece.classList.add(`player${currPlayer}`);
+	piece.setAttribute('id','moving')
 
 	const place = document.getElementById(`${y}-${x}`);
 	place.append(piece);
+	setTimeout(() => {
+		el = document.getElementById('moving')
+		el.style.top = 0;
+		el.setAttribute('id','')
+	})
 }
 
 /** endGame: announce game end */
